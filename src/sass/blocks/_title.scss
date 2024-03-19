@@ -1,0 +1,40 @@
+.title {
+  font-weight: 400;
+  color: $main-color;
+  &_fz70 {
+    font-size: 70px;
+    line-height: 126%;
+    letter-spacing: 0.05em;
+  }
+  &_fz75 {
+    font-size: 75px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+  }
+  &_fz80-bold {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+  }
+  &_fz64 {
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0.05em;
+  }
+  &_fz57 {
+    font-size: 57px;
+    line-height: 124%;
+    letter-spacing: 0.04em;
+  }
+  &_fz65 {
+    font-size: 65px;
+    line-height: 122%;
+    letter-spacing: 0.04em;
+  }
+  &_fz72 {
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+  }
+}
