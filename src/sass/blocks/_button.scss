@@ -17,4 +17,13 @@
     font-size: 18px;
     line-height: 150%;
   }
+  &_small {
+    display: block;
+    width: 87px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 192%;
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
