@@ -1,0 +1,78 @@
+.footer {
+  padding-top: 200px;
+  padding-bottom: 127px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 447px 179px 179px 447px;
+    column-gap: 16px;
+  }
+  &__logo {
+    position: relative;
+    &-main {
+      width: 223px;
+      height: 45px;
+    }
+    &-social {
+      margin-top: 20px;
+      width: 92px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-instagram,
+    &-facebook,
+    &-twitter {
+      &_color {
+        position: absolute;
+        transition: all 0.5s;
+        img {
+          width: 36px;
+          height: 36px;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &-facebook {
+      &_color {
+        opacity: 0;
+        top: 59px;
+        left: 64px;
+      }
+    }
+    &-twitter {
+      &_color {
+        opacity: 0;
+        top: 59px;
+        left: 27px;
+        transform: rotate(10deg);
+      }
+    }
+    &-instagram {
+      &_color {
+        opacity: 0;
+        top: 59px;
+        left: -7px;
+      }
+    }
+  }
+  &__menu {
+    list-style-type: none;
+    &-item {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 159%;
+        color: $main-color;
+      }
+    }
+  }
+  &__social {
+    img {
+      margin-right: 17px;
+    }
+  }
+}

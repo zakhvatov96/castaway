@@ -7,17 +7,36 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <div class="menu">
+      <div class="menu__block">
+        <nav>
+          <img src="icons/main_logo.svg" alt="main" />
+          <ul class="menu__list">
+            <li class="menu__list-item"><a href="#">Home</a></li>
+            <li class="menu__list-item"><a href="#episodes">Episodes</a></li>
+            <li class="menu__list-item"><a href="#host">About</a></li>
+            <li class="menu__list-item"><a href="#subscribe">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+    <nav id="up" class="navbar">
       <div class="container">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="navbar__wrapper">
           <div class="navbar__logo">
             <a href="#"><img src="icons/main_logo.svg" alt="main_logo" /></a>
           </div>
           <ul class="navbar__menu">
             <li class="navbar__menu-item"><a href="#">Home</a></li>
-            <li class="navbar__menu-item"><a href="#">Episodes</a></li>
-            <li class="navbar__menu-item"><a href="#">About</a></li>
-            <li class="navbar__menu-item"><a href="#">Contact</a></li>
+            <li class="navbar__menu-item"><a href="#episodes">Episodes</a></li>
+            <li class="navbar__menu-item"><a href="#host">About</a></li>
+            <li class="navbar__menu-item"><a href="#subscribe">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -46,17 +65,19 @@
             />
             <div class="promo__descr">Listen on</div>
             <div class="promo__social">
-              <img src="icons/spotify.svg" alt="spotify" />
-              <img src="icons/pocket_casts.svg" alt="pocket" />
-              <img src="icons/soundcloud.svg" alt="soundcloud" />
-              <img src="icons/itunes.svg" alt="itunes" />
-              <img src="icons/overcast.svg" alt="overcast" />
+              <a href="#"><img src="icons/spotify.svg" alt="spotify" /></a>
+              <a href="#"><img src="icons/pocket_casts.svg" alt="pocket" /></a>
+              <a href="#"
+                ><img src="icons/soundcloud.svg" alt="soundcloud"
+              /></a>
+              <a href="#"> <img src="icons/itunes.svg" alt="itunes" /></a>
+              <a href="#"><img src="icons/overcast.svg" alt="overcast" /></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="episodes">
+    <section id="episodes" class="episodes">
       <div class="container">
         <div class="episodes__header">
           <h2 class="title title_fz64 episodes__title">Latest episodes</h2>
@@ -122,7 +143,7 @@
         </div>
       </div>
     </section>
-    <section class="host">
+    <section id="host" class="host">
       <div class="container">
         <div class="host__wrapper">
           <div class="host__text">
@@ -158,9 +179,155 @@
             <input required name="email" type="email" placeholder="Email" />
             <button class="btn btn_small">Submit</button>
           </form>
+          <img
+            src="icons/subscribe_pseudo.svg"
+            alt="sub_pseudo"
+            class="subscribe__pseudo"
+          />
         </div>
       </div>
     </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__items">
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">
+              I can’t recommend this podcast enough
+            </div>
+            <div class="feedback__name">Betty Lacey</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">
+              Jacob is the best in the business
+            </div>
+            <div class="feedback__name">Adam Driver</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">A wealth of audio knowledge</div>
+            <div class="feedback__name">Marcus Brown</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">Every episode is a gem!</div>
+            <div class="feedback__name">Jessica Knowl</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">
+              Whoa whoa, let me take some notes!
+            </div>
+            <div class="feedback__name">Scott Adams</div>
+          </div>
+          <div class="feedback__item">
+            <div class="feedback__stars">
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+              <img src="icons/star.svg" alt="star" />
+            </div>
+            <div class="feedback__comment">
+              I’ve upped my game considerably since I started listening
+            </div>
+            <div class="feedback__name">Steven Blast</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <a href="#">
+              <img
+                src="icons/main_logo.svg"
+                alt="logo"
+                class="footer__logo-main"
+            /></a>
+            <div class="footer__logo-social">
+              <a href="#" class="footer__logo-instagram">
+                <img src="icons/igram.svg" alt="instagtam"
+              /></a>
+              <a href="#" class="footer__logo-instagram_color"
+                ><img src="icons/instagram-color.svg" alt="instagram-color"
+              /></a>
+              <a href="#" class="footer__logo-twitter">
+                <img src="icons/twitter.svg" alt="twitter"
+              /></a>
+              <a href="#" class="footer__logo-twitter_color"
+                ><img src="icons/twitter-color.svg" alt="twitter-color"
+              /></a>
+              <a href="#" class="footer__logo-facebook">
+                <img src="icons/fb.svg" alt="fb"
+              /></a>
+              <a href="#" class="footer__logo-facebook_color"
+                ><img src="icons/facebook-color.svg" alt="facebook-color"
+              /></a>
+            </div>
+          </div>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="#up">Home</a></li>
+            <li class="footer__menu-item"><a href="#host">About</a></li>
+            <li class="footer__menu-item"><a href="#episodes">Episodes</a></li>
+            <li class="footer__menu-item"><a href="#subscribe">Contact</a></li>
+          </ul>
+          <ul class="footer__menu footer__menu-right">
+            <li class="footer__menu-item"><a href="#">Style Guide</a></li>
+            <li class="footer__menu-item"><a href="#">Instructions</a></li>
+            <li class="footer__menu-item"><a href="#">Changelog</a></li>
+            <li class="footer__menu-item"><a href="#">Credit</a></li>
+            <li class="footer__menu-item">
+              <a href="#">Powered by Webflow</a>
+            </li>
+            <li class="footer__menu-item"><a href="#">Licenses</a></li>
+          </ul>
+          <div class="footer__social">
+            <a href="#"><img src="icons/spotify.svg" alt="spotify" /></a>
+            <a href="#"><img src="icons/pocket_casts.svg" alt="pocket" /></a>
+            <a href="#"><img src="icons/soundcloud.svg" alt="soundcloud" /></a>
+            <a href="#"> <img src="icons/itunes.svg" alt="itunes" /></a>
+            <a href="#"><img src="icons/overcast.svg" alt="overcast" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a class="pageup" href="#up">
+      <img src="icons/circle-up.svg" alt="up" />
+    </a>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

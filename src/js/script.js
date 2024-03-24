@@ -1,3 +1,7 @@
+const menu = document.querySelector(".menu"),
+  menuItem = document.querySelectorAll(".menu__list-item"),
+  hamburger = document.querySelector(".hamburger");
+
 function validateForms(form) {
   $(form).validate({
     rules: {
@@ -24,3 +28,34 @@ function validateForms(form) {
 }
 
 validateForms(".subscribe__form");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
+menuItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
+});
+
+// pageup
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1600) {
+    $(".pageup").fadeIn();
+  } else {
+    $(".pageup").fadeOut();
+  }
+});
+
+$('a[href^="#"').on("click", function () {
+  let href = $(this).attr("href");
+
+  $("html, body").animate({
+    scrollTop: $(href).offset().top,
+  });
+  return false;
+});

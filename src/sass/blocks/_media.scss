@@ -1,0 +1,443 @@
+@media (max-width: 1350px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 940px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .title {
+    &_fz70 {
+      font-size: 55px;
+    }
+    &_fz75 {
+      font-size: 60px;
+    }
+    &_fz80-bold {
+      font-size: 65px;
+    }
+    &_fz64 {
+      font-size: 43px;
+    }
+    &_fz65 {
+      font-size: 50px;
+    }
+  }
+  .promo {
+    &__wrapper {
+      grid-template-columns: repeat(2, 470px);
+      grid-template-rows: minmax(573px, auto);
+    }
+    &__text {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    &__underline {
+      top: 287px;
+    }
+  }
+  .episodes {
+    &__article {
+      grid-template-columns: 280px 590px;
+      column-gap: 42px;
+      padding: 25px;
+    }
+    &__subtitle {
+      width: 500px;
+    }
+    &__descr {
+      width: 500px;
+      font-size: 18px;
+    }
+    &__img {
+      align-self: center;
+    }
+    &__count {
+      margin-top: 20px;
+    }
+  }
+  .host {
+    padding-top: 65px;
+    &__wrapper {
+      grid-template-columns: repeat(2, 470px);
+    }
+    &__arrow {
+      margin-top: 35px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+  }
+  .subscribe {
+    padding-top: 60px;
+    &__wrapper {
+      grid-template-columns: 410px 450px;
+    }
+    &__pseudo {
+      display: none;
+    }
+  }
+  .feedback {
+    padding-top: 60px;
+    &__items {
+      grid-template-columns: repeat(auto-fit, 423px);
+      justify-content: center;
+    }
+  }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__wrapper {
+      grid-template-columns: 300px 146px 146px 300px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title {
+    &_fz70 {
+      font-size: 45px;
+    }
+    &_fz75 {
+      font-size: 50px;
+    }
+    &_fz80-bold {
+      font-size: 55px;
+    }
+    &_fz64 {
+      font-size: 37px;
+    }
+    &_fz65 {
+      font-size: 35px;
+    }
+    &_fz72 {
+      font-size: 53px;
+    }
+  }
+  .promo {
+    &__wrapper {
+      grid-template-columns: repeat(2, 360px);
+      grid-template-rows: minmax(420px, auto);
+    }
+    &__text {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &__underline {
+      top: 152px;
+    }
+  }
+  .episodes {
+    &__article {
+      grid-template-columns: 250px 450px;
+      column-gap: 20px;
+      padding: 15px;
+    }
+    &__subtitle {
+      width: 430px;
+    }
+    &__descr {
+      width: 430px;
+      font-size: 16px;
+    }
+    &__button {
+      width: 150px;
+      font-size: 14px;
+    }
+    &__header {
+      margin-bottom: 20px;
+    }
+  }
+  .host {
+    &__wrapper {
+      grid-template-columns: repeat(2, 360px);
+    }
+    &__arrow {
+      width: 58px;
+      height: 58px;
+      margin-top: 10px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+  .subscribe {
+    &__wrapper {
+      grid-template-columns: repeat(2, 320px);
+      padding-bottom: 59px;
+    }
+    &__form {
+      input {
+        height: 60px;
+      }
+    }
+  }
+  .feedback {
+    &__items {
+      grid-template-columns: repeat(auto-fit, 260px);
+      grid-template-rows: repeat(auto-fit, 260px);
+      grid-auto-rows: 260px;
+    }
+    &__item {
+      padding: 30px;
+    }
+    &__comment {
+      font-size: 21px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      grid-template-columns: 402px 302px;
+      row-gap: 20px;
+    }
+    &__logo {
+      display: flex;
+      justify-content: space-between;
+      order: 0;
+      &-social {
+        margin: 0;
+        align-items: center;
+      }
+    }
+    &__social {
+      align-self: center;
+      justify-self: center;
+      order: 1;
+    }
+    &__menu {
+      order: 2;
+      text-align: center;
+      justify-self: center;
+      align-self: center;
+      &-right {
+        text-align: center;
+        justify-self: start;
+        align-self: center;
+        margin-top: 30px;
+      }
+      &-item {
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title {
+    &_fz72 {
+      font-size: 45px;
+    }
+  }
+  .navbar {
+    &__menu {
+      display: none;
+    }
+  }
+  .hamburger {
+    display: block;
+  }
+  .promo {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(200px, auto);
+    }
+    &__photo {
+      display: none;
+    }
+    &__pseudo {
+      display: none;
+    }
+    &__underline {
+      top: 39px;
+      left: 293px;
+    }
+    &__descr {
+      text-align: center;
+      font-size: 25px;
+    }
+    &__social {
+      margin: 0 auto;
+      margin-top: 16px;
+    }
+  }
+  .episodes {
+    &__article {
+      grid-template-columns: 1fr;
+      margin-bottom: 30px;
+    }
+    &__img {
+      display: none;
+    }
+    &__count {
+      text-align: center;
+    }
+    &__subtitle {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 17px;
+    }
+    &__descr {
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 28px;
+    }
+    &__button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 18px;
+    }
+  }
+  .host {
+    padding-top: 30px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(300px, auto) 400px;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+  .subscribe {
+    &__wrapper {
+      padding: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 200px;
+      column-gap: 30px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__logo {
+      grid-column: 1 / 3;
+      &-main {
+        width: 160px;
+        height: 34px;
+      }
+    }
+    &__social {
+      grid-column: 1 / 3;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .title {
+    &_fz65 {
+      font-size: 33px;
+    }
+    &_fz72 {
+      font-size: 25px;
+    }
+  }
+  .menu {
+    &__list {
+      &-item {
+        font-size: 20px;
+      }
+    }
+    &__block {
+      img {
+        width: 120px;
+      }
+    }
+  }
+  .promo {
+    &__text {
+      padding-right: 10px;
+      padding-left: 10px;
+      text-align: center;
+    }
+    &__underline {
+      display: none;
+    }
+    &__descr {
+      margin-top: 50px;
+    }
+  }
+  .episodes {
+    &__header {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 50px);
+      justify-content: center;
+      row-gap: 10px;
+      justify-items: center;
+    }
+    &__subtitle {
+      width: 270px;
+    }
+    &__descr {
+      width: 270px;
+    }
+  }
+
+  .host {
+    padding-top: 15px;
+    &__wrapper {
+      justify-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+    &__descr {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  .subscribe {
+    h3 {
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+    &__form {
+      input {
+        height: 40px;
+        font-size: 18px;
+      }
+    }
+    .btn {
+      margin: 0 auto;
+    }
+  }
+  .footer {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__logo {
+      grid-column: unset;
+      order: 5;
+    }
+    &__social {
+      grid-column: unset;
+    }
+    &__menu {
+      margin-top: 0;
+      margin-bottom: 0;
+      justify-self: center;
+    }
+  }
+}

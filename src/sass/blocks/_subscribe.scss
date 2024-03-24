@@ -1,6 +1,7 @@
 .subscribe {
   padding-top: 202px;
   &__wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 431px 522px;
     justify-content: space-between;
@@ -26,6 +27,11 @@
       line-height: 120%;
       color: rgba(255, 255, 255, 0.7);
     }
+  }
+  &__pseudo {
+    position: absolute;
+    bottom: -30px;
+    left: -35px;
   }
   .error {
     border: 1px solid red;
